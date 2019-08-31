@@ -1,0 +1,19 @@
+<div class="container pt-3">
+  <div class="row">
+    <div class="input-group mb-3">
+      <input #url type="text" class="form-control" placeholder="Enter image url" aria-label="Image url"
+        aria-describedby="button-addon2">
+      <div class="input-group-append">
+        <button class="btn btn-secondary" type="button" (click)='getFaceData(url)'>Send</button>
+      </div>
+    </div>
+  </div>
+  <div class="row" *ngIf="jsonFile">
+    <div class="col-6">
+      <ngx-json-viewer [json]="jsonFile" [expanded]="false"></ngx-json-viewer>
+    </div>
+    <div class="col-6">
+      <img [src]="imageUrl" class="img-fluid" alt="image">
+    </div>
+  </div>
+</div>
