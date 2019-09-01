@@ -1,6 +1,8 @@
 # FaceRecognition
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.9.
+This project uses Microsoft Face API, so before run you should provide your own API key in src/app/face-recognition.service.ts.
+You can use a 7-day-trial version key.
 
 ## Development server
 
