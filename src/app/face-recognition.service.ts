@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class FaceRecognitionService {
 
-  apiKey = "Microsoft Face API key";
+  apiKey = "67d578f521e740ea8fe573576ed00478";
   apiUrl = "https://westcentralus.api.cognitive.microsoft.com/face/v1.0/detect";
   headers = {
     "Content-Type": "application/json",
